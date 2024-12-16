@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className="flex h-dvh justify-between items-center flex-col">
-        <div className="text-center h-1/3 pt-[100px]">
+        <div className="text-center h-1/3 pt-[100px] z-10">
           <p className="angelina text-[900%] max-md:text-[700%]">Thema</p>
           <p className="uppercase text-8xl max-sm:text-6xl">Travels</p>
           <p className="uppercase text-3xl max-sm:text-xl font-bold">
