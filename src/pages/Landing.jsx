@@ -1,5 +1,6 @@
 import logo from "./../../public/favicon.png";
 import banner from "./../assets/Landing/banner.png";
+import mandala from "./../assets/Landing/mandala.png";
 
 function Landing() {
   return (
@@ -27,7 +28,18 @@ function Landing() {
       {/*welcome*/}
       <div className="relative px-12 py-6 max-md:px-6 h-[60dvh] flex flex-col items-center max-lg:h-fit">
         <div className="absolute flex justify-center w-5/6 h-full p-12 bg-white -top-10 rounded-2xl max-md:p-6 max-lg:flex-col max-lg:relative max-lg:top-0 max-lg:gap-6 max-lg:w-full max-lg:shadow-lg max-sm:shadow-none max-sm:rounded-none max-sm:p-0">
-        {/*left side*/}
+          {/*mandala - top right*/}
+          <div
+            className="sm:rounded-tr-2xl absolute bg-center top-0 right-0 bg-no-repeat h-[500px] max-md:h-[300px] max-sm:h-[200px] aspect-square"
+            style={{ backgroundImage: `url(${mandala})` }}
+          ></div>
+          {/*mandala - bottom left*/}
+          <div
+            className="sm:rounded-tr-2xl absolute bg-center bottom-0 left-0 bg-no-repeat h-[500px] max-md:h-[300px] max-sm:h-[200px] aspect-square rotate-180"
+            style={{ backgroundImage: `url(${mandala})` }}
+          ></div>
+
+          {/*left side*/}
           <div className="flex flex-col justify-center w-1/3 gap-6 max-sm:gap-3 max-lg:w-full">
             <p className="text-xl arapay">A Warm</p>
             <p className="text-6xl text-[#700302] arapay">Welcome</p>
@@ -36,8 +48,11 @@ function Landing() {
           </div>
           {/*right side*/}
           <div className="relative flex items-center justify-center w-2/3 px-12 py-6 max-lg:w-full max-md:px-6 max-sm:p-0">
-            <p className="absolute poltawski-nowy top-3 left-2 text-[#700302] max-sm:hidden">“</p>
-            <p className="h-fit max-md:px-6 max-sm:px-0">
+            {/*text content*/}
+            <p className="absolute poltawski-nowy top-3 left-2 text-[#700302] max-sm:hidden">
+              “
+            </p>
+            <p className="text-justify h-fit max-md:px-6 max-sm:px-0">
               Dear Traveler's, On behalf of the entire team at Travels Sri
               Lanka, I would like to extend a warm welcome to you. It is with
               great pride and joy that we invite you to embark on an
@@ -55,7 +70,9 @@ function Landing() {
               step of the way. Thank you for choosing Travels Sri Lanka. We look
               forward to being a part of your incredible journey. Warm regards,
             </p>
-            <p className="absolute poltawski-nowy bottom-3 right-2 place-content-end text-[#700302] max-sm:hidden">”</p>
+            <p className="absolute poltawski-nowy bottom-3 right-2 place-content-end text-[#700302] max-sm:hidden">
+              ”
+            </p>
           </div>
         </div>
       </div>
