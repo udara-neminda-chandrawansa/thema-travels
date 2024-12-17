@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import { Route, Switch, useLocation } from "wouter";
 import Landing from "./pages/Landing";
+import Footer from "./components/Footer";
 
 function App() {
   const [location, setLocation] = useLocation();
@@ -20,6 +21,7 @@ function App() {
         {/* Default route in a switch */}
         <Route>404: No such page!</Route>
       </Switch>
+      <Footer></Footer>
     </>
   );
 }
